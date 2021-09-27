@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>sign up form</title>
+        <style>
+            #sign-up-form {
+                width: 400px;
+                background-color: rgb(178, 126, 226);
+                padding: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .input-labels {
+                margin: 0;
+                margin-bottom: 10px;
+                margin-top: 15px;
+            }
+            .input-item{
+                width: 200px;
+            }
+            #terms-conditions {
+                margin-top: 25px;
+                margin-bottom: 25px;
+
+            }
+        </style>
+    </head>
+    <body style="background-color: cornsilk;">
+        <h1 style="text-align: center;">sign up</h1>
+        <form id="sign-up-form" method="POST">
+            <div>
+                <p class="input-labels">Full name:</p>
+                <input class="input-item" type="text" name="full name">
+
+            </div>
+            <div>
+                <p class="input-labels">Email:</p>
+                <input class="input-item" type="email" name="email">    
+            </div>
+            <div>
+                <p class="input-labels">Password:</p>
+                <input class="input-item" type="password" name="password">    
+            </div>
+            <div>
+                <p class="input-labels">Confirm Password: </p>
+                <input class="input-item" type="password" name="confirm">    
+            </div>
+            <div>
+                <p class="input-labels">Gender:</p>
+                <input type="radio" name="female" value="female">
+                Female<input type="radio" name="male" value="male">
+                male<input type="radio" name="others" value="others">
+            </div>
+            <div>
+                <p class="input-labels">Security Question:</p>
+                <select name="security-questions">
+                <option value="nick-name">what is your nick name?
+                </option>
+                <option value="place">where do you live?
+                </option>
+                <option value="colour">what's your favourite colour?
+                </option>
+                </select>
+            </div>
+            <div>
+                <textarea class="input-item"name="" id="" cols="30" rows="5"></textarea>
+            </div>
+            <div>
+                <input id="terms-conditions" type="checkbox" name="terms-and-conditions">I agree to accept
+                all the terms-and-conditions.
+            </div>
+            <div>
+                <input type="submit" name="sign-up" value="Sign Up">
+            </div>
+        </form>
+    </body>
+</html>
